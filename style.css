@@ -1,0 +1,255 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #00FF42;
+    --cor-de-fundo: #000000;
+    --fonte-principal: 'Inter';
+    font-family: var(--fonte-principal) ;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+   
+
+}
+
+.principal{
+    background-image: url(./img/background.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: var(--fonte-principal) ;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+}
+.container__caixa{
+    margin: 0 4em;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+    justify-content: center;
+}
+
+.titulo__secundario{
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}   
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario__imagens{
+    width: 610px;
+    height: 350px;
+    margin-left: 1%;
+
+}
+
+.container__descricao{
+    padding: 0em;
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+ 
+.secundario__logo{
+    padding-left: 20rem;
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+
+.dispositivos__titulo{
+    font-size: 3rem;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 5em 0 ;
+}
+
+.lista__item{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.rodape__link__logo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.lista__links{
+    text-decoration: none;
+    color:var(--branco-principal);
+}
+
+.rodape__copyright{
+    display:flex;
+    justify-content: center;
+    margin:4em 0;
+    font-size: 0.70rem;
+    }
+
+    .lista__links:hover{
+        color:var(--botao-azul)
+    }
+
+@media (max-width:1570px){
+
+    .container__caixa{
+        margin: 0 0;
+
+    }
+
+    .secundario{
+       display:flex;
+       flex-direction: column-reverse;
+       gap: 8rem
+    }
+
+    .secundario__logo{
+        display:flex;
+        padding: 0 0;
+    }
+    
+    .titulo__secundario{
+        justify-content: center;
+        margin-top: 3em;
+    }
+
+    .descricao__texto{
+        justify-content: center;
+    }
+    
+    .container__texto{
+        justify-content: center;
+    }
+    .dispositivos{
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width:1000px){
+    .dispositivos__lista{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:1040px){
+    .rodape__lista{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__caixa{
+        margin: 2em 2em;
+    }
+    .secundario{
+        margin: 2em;
+    }
+
+}
+
+@media (max-width:660px){
+   
+  
+    .principal{
+    background-image: none;
+    display: flex;
+   }
+  
+   .imagem{
+    height: 200px;
+    width: 320px;
+   }
+   .secundario__botao{
+    align-content: center;
+   }
+
+   .descricao__texto{
+    font-size: 13px;
+   }
+
+   .titulo__secundario{
+     font-size: 28px;
+   }
+
+   .secundario__botao{
+    font-size: 13px;
+   }
+ 
+}
+
+@media (max-width:380px){
+    .secundario__logo{
+        padding-top: 16em;
+    }
+
+    .container__imagem{
+        width:330px
+    }
+
+    .titulo__secundario{
+        margin-top:9em
+    }
+
+    .dispositivos{
+        padding: 1em
+    }
+
+}
